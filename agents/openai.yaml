@@ -1,0 +1,6 @@
+interface:
+  display_name: "AAWF Lean Workflow"
+  short_description: "Complete AI tasks with less wasted context and compute"
+  default_prompt: "Use $aawf to choose the simplest sufficient model and workflow, compile a concise prompt, complete and verify my task in the current host, and report honest first-call, possible session, and sustainability impact without inventing telemetry."
+policy:
+  allow_implicit_invocation: false
