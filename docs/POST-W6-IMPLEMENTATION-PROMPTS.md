@@ -1,13 +1,13 @@
 # AAWF — Implementation Prompts to Use AFTER W6
-**Prepared:** 2026-10-08. **W6 status:** IN PROGRESS, not yet finished.  
+**Prepared:** 2026-10-08. **W6 status:** COMPLETED per user's 2026-10-08 update; technical handoff/acceptance checks pending.  
 **Source of decisions:** [six-pillar decision record](AAWF-SIX-PILLAR-DECISIONS-2026-10-08.md).  
 **Isolation:** a Skill-only draft is on `aawf-six-pillars-post-w6`. No MCP/Gateway/W6/website modification is claimed.
 
-Do not execute the next phase until W6 provides its implementation summary, branch/commit, test results and the exact MCP tool catalog. Each prompt below is deliberately bounded. **Do not call all agents/phases at once.**
+W6 is reported completed. Perform Prompt A now to verify its implementation summary, branch/commit, test results and exact MCP tool catalog before modifying or merging implementation code. Each prompt below is deliberately bounded. **Do not call all agents/phases at once.**
 
 ## Prompt A — W6 completion handoff and reconciliation
 
-> W6 is currently being completed. Once its work finishes, audit its actual deliverables without changing the code. Identify repository, branch/commit, changed modules, tool interfaces, exposed MCP capabilities, tests executed, pass/fail evidence, and known limitations. Compare these against docs/AAWF-SIX-PILLAR-DECISIONS-2026-10-08.md in the AAWF Skill repository. Do not mark W6 complete without evidence. Distinguish what is already implemented from what is planned. Identify any dependencies or conflicts with the isolated Skill branch `aawf-six-pillars-post-w6`. Report a prioritized, minimal next-phase plan focused on verified net resource efficiency. Do not change the active product page.
+> W6 is reported completed by the user. Audit its actual deliverables without changing the code. Identify repository, branch/commit, changed modules, tool interfaces, exposed MCP capabilities, tests executed, pass/fail evidence, and known limitations. Compare these against docs/AAWF-SIX-PILLAR-DECISIONS-2026-10-08.md in the AAWF Skill repository. Distinguish user-confirmed milestone completion from independently validated technical readiness. Distinguish what is already implemented from what is planned. Identify any dependencies or conflicts with the isolated Skill branch `aawf-six-pillars-post-w6`. Report a prioritized, minimal next-phase plan focused on verified net resource efficiency. Do not change the active product page.
 
 ## Prompt B — W7 Skill integration (run only after W6 handoff)
 
