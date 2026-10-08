@@ -25,7 +25,7 @@ The currently observed MCP offers `aawf_prepare_context` and `aawf_calculate_imp
 
 - Existing repository tests can be run using `python -m unittest discover -s tests -v` and `python scripts/validate_benchmark.py evals/benchmark.jsonl`. These **must be rerun** after changing the Skill; passing tests are not asserted here.
 - See [AAWF six-pillar decisions](docs/AAWF-SIX-PILLAR-DECISIONS-2026-10-08.md) and [post-W6 prompts](docs/POST-W6-IMPLEMENTATION-PROMPTS.md).
-- **W6 is in progress**, according to the user; this branch is isolated for review after W6.
+- **W6 is reported completed by the user on 2026-10-08**, but its technical handoff and merge-readiness review are pending. This branch remains isolated until reconciliation and testing.
 - A future website-copy refresh should position AAWF as a **student sustainability project**, not mainly a commercial product. The existing product page is not changed here.
 
 AAWF measures **total resource use per successfully completed task** in matched evaluation, including relevant overhead. Shorter prompts alone are not evidence of lower total inference costs or water use.
