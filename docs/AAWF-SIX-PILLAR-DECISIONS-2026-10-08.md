@@ -1,6 +1,6 @@
 # AAWF — Approved Direction and Work-in-Progress Decision Record
 **Recorded:** 2026-10-08 (Dubai)  
-**Status:** Architectural decisions recorded; isolated Skill draft exists on branch \`aawf-six-pillars-post-w6\`; W6 is **IN PROGRESS** per the user, not verified complete. Do not merge or overwrite W6 without its handoff/test results.
+**Status:** Architectural decisions recorded; isolated Skill draft exists on branch `aawf-six-pillars-post-w6`; W6 is **IN PROGRESS** per the user, not verified complete. Do not merge or overwrite W6 without its handoff/test results.
 
 ## Identity and purpose
 
@@ -11,11 +11,11 @@ AAWF is a **student sustainability project**, not primarily a commercial product
 | # | Pillar | Owner | Current evidence/status |
 |---|---|---|---|
 | 1 | Task analysis and workflow selection | Skill | Existing Skill behavior; remove model/plan/reasoning-level suggestions. |
-| 2 | Prompt and context optimization | Skill, optional MCP context preparation | Skill logic exists; MCP \`aawf_prepare_context\` exposed in current connection. |
+| 2 | Prompt and context optimization | Skill, optional MCP context preparation | Skill logic exists; MCP `aawf_prepare_context` exposed in current connection. |
 | 3 | Efficient execution and verification | Skill | Existing guidance; no master agents, simulated roles, autonomous sub-agents, or gateway. |
 | 4 | Memory and safe response reuse | MCP, invoked conditionally from Skill | Earlier trials exercised save/recall; currently connected MCP does **not** expose save/recall or response-cache functions. Restore/verify after W6, do not claim implemented. |
 | 5 | Lightweight RAG retrieval filtering | MCP/connector integration | In-progress feature not verified current MCP. Only deduplicate retrieved chunks, reuse existing retrieval scores, select to token budget, and conditionally skip. |
-| 6 | Savings and environmental measurement + optional dashboard | Skill, MCP, offline reporting | Current MCP exposes \`aawf_calculate_impact\`. A persistent dashboard is not verified. Never claim energy/water savings without evidence and uncertainty disclosure. |
+| 6 | Savings and environmental measurement + optional dashboard | Skill, MCP, offline reporting | Current MCP exposes `aawf_calculate_impact`. A persistent dashboard is not verified. Never claim energy/water savings without evidence and uncertainty disclosure. |
 
 ## Remove/retire from the target feature set
 
@@ -50,10 +50,10 @@ Keep a feature only if end-to-end evidence shows its benefits outweigh tool traf
 
 ## Current implementation boundary
 
-- The public \`snowlaws779-droid/AAWF-skill\` repository has been inspected; its original main branch did include mandatory model advice and model-picker setup questions.
+- The public `snowlaws779-droid/AAWF-skill` repository has been inspected; its original main branch did include mandatory model advice and model-picker setup questions.
 - An **isolated branch** now refactors SKILL.md and its active docs toward the six pillars. This branch is **not merged** and does not modify the live MCP, the gateway, W6, or the website.
 - W6 is **still being completed**, scope/branch and handoff not independently verified. Pause merging until W6 handoff and tests.
-- Current AAWF MCP exposes \`aawf_prepare_context\` and \`aawf_calculate_impact\`; memory, response caching and RAG functionality require fresh verification.
+- Current AAWF MCP exposes `aawf_prepare_context` and `aawf_calculate_impact`; memory, response caching and RAG functionality require fresh verification.
 - Status labels in tomorrow's pitch must distinguish *tested*, *in progress*, and *planned*.
 
 ## Tomorrow's six-pillar pitch
@@ -75,4 +75,4 @@ After core engineering and evaluation, rewrite the existing main product page to
 5. Run representative matched quality+resource benchmarks and prepare optional visual report.
 6. Review site rebrand copy as a separate future change.
 
-See \`docs/POST-W6-IMPLEMENTATION-PROMPTS.md\` for ready-to-run prompts.
+See `docs/POST-W6-IMPLEMENTATION-PROMPTS.md` for ready-to-run prompts.
