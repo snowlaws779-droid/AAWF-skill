@@ -34,8 +34,8 @@ Use [references/decision-rubric.md](references/decision-rubric.md) only if the t
 
 Before each MCP call, ask: Does the task actually need context preparation, memory retrieval, RAG filtering, or impact estimation? Is that exact MCP tool currently exposed and authorized? Does the expected benefit exceed the extra tool/result payload and processing? If any answer is no, skip the tool.
 
-- For available \`aawf_prepare_context\`: supply only the optional context chunks the user permitted; preserve required text, item order, source provenance, and citations. The tool's payload counts are **not** model-provider token savings.
-- For available \`aawf_calculate_impact\`: require an appropriate matched baseline/candidate and transparent energy/water assumptions; label estimates rather than measured environmental savings. Unknown components stay unknown.
+- For available `aawf_prepare_context`: supply only the optional context chunks the user permitted; preserve required text, item order, source provenance, and citations. The tool's payload counts are **not** model-provider token savings.
+- For available `aawf_calculate_impact`: require an appropriate matched baseline/candidate and transparent energy/water assumptions; label estimates rather than measured environmental savings. Unknown components stay unknown.
 - Memory save/recall, response caching, and the new RAG filter **must be treated as unavailable when their tools are not actually exposed**. Never simulate a persistent save or a cache hit.
 
 ## Accounting and boundaries
@@ -44,7 +44,7 @@ Distinguish first-call **input estimates** from full-task **measured totals**. I
 
 Preserve host authorization and privacy rules. Do not store secrets, enable cross-user response reuse, or make irreversible changes without required approval. Do not activate model advice, model-picker interrogation, reasoning-level advice, provider routing, gateway operations, automatic agents, or autonomous self-learning.
 
-The current phase called **W6 is in progress (user-reported)**. Do not modify or claim completion of its separate workstream. Any change to this Skill must be reviewed against W6 before merging.
+This Skill branch must be reviewed against the W6 handoff before merging; see the six-pillar decision record.
 
 ## Response contract
 
