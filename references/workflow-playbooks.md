@@ -1,31 +1,24 @@
-# AAWF Phase 1 Workflow Playbooks
+# AAWF Lean Workflow Playbooks
 
-Select one mode. Use this reference to tailor execution and verification, not to force a long process.
+Choose at most one task mode. These are instructions for the **current host AI**, not separate agents or model-selection recommendations.
 
 ## Website or UI build
-
-Choose a balanced visual-capable model unless the page has unusual interactions or a large existing codebase. Keep the brief, requested design skill, brand material, and target framework. Use one implementation pass followed by desktop and mobile render checks. Avoid agents for a single page or component. Stop after the requested page works and the visual checks pass.
+Keep design constraints and files needed to implement. Build the requested scope, check layout on desktop/mobile where supported, verify interactions/links. Do not add features beyond the request.
 
 ## Coding change
-
-Start directly for a narrow edit; use plan-first only when several modules or interfaces must change together. Keep the affected files, error output, tests, and explicit acceptance criteria. Run the smallest relevant test or build check. Split work only when files or investigations are genuinely independent.
+For a narrow edit, change the minimum necessary. For coupled changes, briefly map dependencies and acceptance criteria. Run the smallest relevant tests/build. Preserve unrelated code.
 
 ## Debugging
-
-Use focused analysis. Keep the reproducible error, environment details, recent changes, and minimal affected code. Remove broad logs and unrelated files. Reproduce, isolate, fix, and verify without repeatedly reloading unchanged evidence. Prefer a reliable model when the fault crosses modules or the evidence is incomplete.
+Keep the failing example, error evidence, and affected code. Reproduce, isolate, fix the supported cause, and verify. Avoid wide log dumps.
 
 ## Research
-
-Use context-first. Preserve the exact question, scope, dates, location, audience, and required source standard. Recommend a source plan before drafting. Use a stronger model only for competing evidence, technical synthesis, or a high-stakes conclusion; otherwise use a balanced model and verification.
+Keep the precise scope and important source constraints. Search only when needed; prefer credible, relevant evidence, distinguish fact from inference, and cite material claims.
 
 ## Writing
-
-Use direct execution for a clear brief and plan-first only for multi-part reports. Keep the audience, purpose, required facts, tone, length, and format. Remove repeated background. Check that the final response matches the requested format and does not introduce unsupported facts.
+Keep audience, facts, voice, length, format, and explicit exclusions. Produce the draft and check requirements. Avoid unnecessary research or diagnostics.
 
 ## Architecture or decision
-
-Use plan-first with clear decision criteria and trade-offs. Keep constraints, current state, viable options, and non-negotiables. Recommend a high-capability model when dependencies or consequences are significant, then check the proposal against every stated constraint.
+Identify constraints, viable options, trade-offs, and checks. Choose the smallest change whose expected net benefit is positive. Do not assume an optimization helps without measuring overhead and quality.
 
 ## Routine task
-
-Use direct execution with the least capable sufficient model. Keep only the instruction and required input. Do not add a plan, research, extended thinking, verification ceremony, or agents unless the task itself needs them.
+Do it directly. Do not add a plan, extra MCP calls, extensive checks, or artificial multi-step workflow when one action suffices.
