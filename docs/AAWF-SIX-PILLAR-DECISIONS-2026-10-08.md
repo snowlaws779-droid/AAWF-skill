@@ -1,6 +1,6 @@
-# AAWF — Approved Direction and Work-in-Progress Decision Record
+# AAWF — Six-Pillar Architecture Decision Record
 **Recorded:** 2026-10-08 (Dubai)  
-**Status:** Architectural decisions recorded; isolated Skill draft exists on branch `aawf-six-pillars-post-w6`; W6 is **IN PROGRESS** per the user, not verified complete. Do not merge or overwrite W6 without its handoff/test results.
+**Status:** Architectural decisions recorded; isolated Skill draft exists on branch `aawf-six-pillars-post-w6`; W6 was **reported COMPLETED by the user on 2026-10-08**. Technical handoff and validation remain pending; do not merge or overwrite W6 without its branch/commit and test results.
 
 ## Identity and purpose
 
@@ -52,7 +52,7 @@ Keep a feature only if end-to-end evidence shows its benefits outweigh tool traf
 
 - The public `snowlaws779-droid/AAWF-skill` repository has been inspected; its original main branch did include mandatory model advice and model-picker setup questions.
 - An **isolated branch** now refactors SKILL.md and its active docs toward the six pillars. This branch is **not merged** and does not modify the live MCP, the gateway, W6, or the website.
-- W6 is **still being completed**, scope/branch and handoff not independently verified. Pause merging until W6 handoff and tests.
+- W6 is **reported complete** (user confirmation, 2026-10-08), but its scope/branch, acceptance tests and exact MCP tool catalog have not been independently verified. Pause merging until W6 handoff and reconciliation.
 - Current AAWF MCP exposes `aawf_prepare_context` and `aawf_calculate_impact`; memory, response caching and RAG functionality require fresh verification.
 - Status labels in tomorrow's pitch must distinguish *tested*, *in progress*, and *planned*.
 
@@ -68,7 +68,7 @@ After core engineering and evaluation, rewrite the existing main product page to
 
 ## Open items
 
-1. Receive W6 exact completion handoff (repository, branch, tests, changed modules, current MCP tool catalog).
+1. Collect and verify W6's completion handoff (repository, branch, tests, changed modules, current MCP tool catalog).
 2. Test/refine the isolated Skill refactor against W6 and merge safely **after** W6.
 3. Implement/test memory and safe exact response reuse in MCP if useful.
 4. Finish new RAG filtering without a gateway.
