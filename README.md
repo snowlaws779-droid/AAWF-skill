@@ -17,13 +17,13 @@ There is **no AAWF provider-routing gateway** in this target architecture. AAWF 
 
 ## How to use
 
-Install the Skill in the appropriate host skill directory and invoke it explicitly as \`$aawf\` where that host supports skill invocation. It completes the requested task in the host, then reports savings only when supported by evidence. MCP access requires separate authorization and a connected endpoint exposing the relevant function.
+Install the Skill in the appropriate host skill directory and invoke it explicitly as `$aawf` where that host supports skill invocation. It completes the requested task in the host, then reports savings only when supported by evidence. MCP access requires separate authorization and a connected endpoint exposing the relevant function.
 
-The currently observed MCP offers \`aawf_prepare_context\` and \`aawf_calculate_impact\`. Older trials used memory save/recall functions; do not assume they remain available. Response-cache hits and RAG savings cannot be claimed just because the Skill describes them.
+The currently observed MCP offers `aawf_prepare_context` and `aawf_calculate_impact`. Older trials used memory save/recall functions; do not assume they remain available. Response-cache hits and RAG savings cannot be claimed just because the Skill describes them.
 
 ## Validation and roadmap
 
-- Existing repository tests can be run using \`python -m unittest discover -s tests -v\` and \`python scripts/validate_benchmark.py evals/benchmark.jsonl\`. These **must be rerun** after changing the Skill; passing tests are not asserted here.
+- Existing repository tests can be run using `python -m unittest discover -s tests -v` and `python scripts/validate_benchmark.py evals/benchmark.jsonl`. These **must be rerun** after changing the Skill; passing tests are not asserted here.
 - See [AAWF six-pillar decisions](docs/AAWF-SIX-PILLAR-DECISIONS-2026-10-08.md) and [post-W6 prompts](docs/POST-W6-IMPLEMENTATION-PROMPTS.md).
 - **W6 is in progress**, according to the user; this branch is isolated for review after W6.
 - A future website-copy refresh should position AAWF as a **student sustainability project**, not mainly a commercial product. The existing product page is not changed here.
